@@ -1,5 +1,5 @@
 export const profile = {
-    name: "MD Gola Maula Asif",
+    name: "MD Golam Mawla Ashif",
     title: "Architect Engineer",
     location: "Nogaon, Rajshahi, Bangladesh",
     tagline: "Designing spaces where engineering meets imagination.",
