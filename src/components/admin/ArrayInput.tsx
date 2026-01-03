@@ -54,7 +54,7 @@ export function ArrayInput({ label, values, onChange, placeholder, description }
                                 className="hover:bg-primary/20 rounded-full p-0.5 transition-colors"
                                 type="button"
                             >
-                                <X className="h-3 w-3" />
+                                <X className="h-3 w-3" suppressHydrationWarning />
                             </button>
                         </span>
                     ))
@@ -78,7 +78,7 @@ export function ArrayInput({ label, values, onChange, placeholder, description }
                     variant="outline"
                     className="gap-1"
                 >
-                    <Plus className="h-4 w-4" />
+                    <Plus className="h-4 w-4" suppressHydrationWarning />
                     Add
                 </Button>
             </div>

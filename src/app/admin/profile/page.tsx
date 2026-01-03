@@ -53,7 +53,7 @@ export default function ProfileEditor() {
                         Reset to Default
                     </Button>
                     <Button onClick={handleSave} className="gap-2">
-                        <Save className="h-4 w-4" />
+                        <Save className="h-4 w-4" suppressHydrationWarning />
                         {saved ? "Saved!" : "Save Changes"}
                     </Button>
                 </div>
@@ -276,7 +276,7 @@ export default function ProfileEditor() {
                                 }}
                                 className="gap-1"
                             >
-                                <Plus className="h-4 w-4" />
+                                <Plus className="h-4 w-4" suppressHydrationWarning />
                                 Add Social Link
                             </Button>
                         </div>
@@ -323,7 +323,7 @@ export default function ProfileEditor() {
                                     }}
                                     className="text-destructive hover:text-destructive"
                                 >
-                                    <X className="h-4 w-4" />
+                                    <X className="h-4 w-4" suppressHydrationWarning />
                                 </Button>
                             </div>
                         ))}

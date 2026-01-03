@@ -32,7 +32,7 @@ export default function AdminLayout({
                             onClick={exportAllData}
                             className="flex items-center gap-2 px-4 py-2 text-sm bg-secondary hover:bg-secondary/80 rounded-md transition-colors"
                         >
-                            <Download className="h-4 w-4" />
+                            <Download className="h-4 w-4" suppressHydrationWarning />
                             Export Data
                         </button>
                         <Link
@@ -64,7 +64,7 @@ export default function AdminLayout({
                                             : "hover:bg-secondary"
                                     )}
                                 >
-                                    <Icon className="h-5 w-5" />
+                                    <Icon className="h-5 w-5" suppressHydrationWarning />
                                     <span className="font-medium">{item.label}</span>
                                 </Link>
                             );
