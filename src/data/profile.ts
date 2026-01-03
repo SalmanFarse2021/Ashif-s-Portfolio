@@ -1,7 +1,7 @@
 export const profile = {
     name: "MD Gola Maula Asif",
     title: "Architect Engineer",
-    location: "USA",
+    location: "Nogaon, Rajshahi, Bangladesh",
     tagline: "Designing spaces where engineering meets imagination.",
     profileImage: "/profile.jpg", // Add your profile image to public folder
     bioShort:

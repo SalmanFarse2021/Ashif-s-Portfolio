@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { Card, CardContent } from "@/components/ui/Card";
 import { useProfile } from "@/hooks/usePortfolioData";
 import { motion } from "framer-motion";
-import { Download, Award, GraduationCap } from "lucide-react";
+import { Download, Award, GraduationCap, MapPin } from "lucide-react";
 
 export default function AboutPage() {
     const { profile } = useProfile();
@@ -34,10 +34,13 @@ export default function AboutPage() {
                                 />
                             )}
                             <div className="flex-1">
-                                <h1 className="text-4xl md:text-6xl font-bold">
-                                    Engineering Logic. <br />
-                                    <span className="text-muted-foreground">Architectural Soul.</span>
+                                <h1 className="text-4xl md:text-6xl font-bold text-primary">
+                                    Md Golam Mawla Ashif
                                 </h1>
+                                <div className="flex items-center gap-2 text-muted-foreground mt-4 text-lg">
+                                    <MapPin className="h-5 w-5" />
+                                    {profile.location}
+                                </div>
                             </div>
                         </div>
                         <div className="text-xl leading-relaxed space-y-6 text-muted-foreground">
@@ -105,26 +108,8 @@ export default function AboutPage() {
                             <CardContent className="pt-6 flex flex-col gap-4">
                                 <GraduationCap className="h-8 w-8 text-primary" />
                                 <div>
-                                    <h3 className="font-bold">Master of Architecture</h3>
-                                    <p className="text-sm text-muted-foreground">University of Design, 2021</p>
-                                </div>
-                            </CardContent>
-                        </Card>
-                        <Card>
-                            <CardContent className="pt-6 flex flex-col gap-4">
-                                <GraduationCap className="h-8 w-8 text-primary" />
-                                <div>
-                                    <h3 className="font-bold">B.S. Civil Engineering</h3>
-                                    <p className="text-sm text-muted-foreground">Tech Institute, 2019</p>
-                                </div>
-                            </CardContent>
-                        </Card>
-                        <Card>
-                            <CardContent className="pt-6 flex flex-col gap-4">
-                                <Award className="h-8 w-8 text-primary" />
-                                <div>
-                                    <h3 className="font-bold">LEED Accredited Professional</h3>
-                                    <p className="text-sm text-muted-foreground">Green Building Council</p>
+                                    <h3 className="font-bold">Diploma in Architecture</h3>
+                                    <p className="text-sm text-muted-foreground">Naogaon Polytechnic Institute, Naogaon</p>
                                 </div>
                             </CardContent>
                         </Card>
