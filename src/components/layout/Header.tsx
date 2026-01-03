@@ -40,8 +40,13 @@ export function Header() {
             )}
         >
             <Container className="flex items-center justify-between h-16 md:h-20">
-                <Link href="/" className="text-xl font-bold tracking-widest uppercase">
-                    Ashif
+                <Link href="/" className="flex items-center gap-3 group">
+                    <div className="relative w-8 h-8 rounded-sm overflow-hidden bg-white/10 p-1 border border-white/20 group-hover:border-primary/50 transition-colors">
+                        <img src="/logo.png" alt="Logo" className="w-full h-full object-contain invert mix-blend-screen" />
+                    </div>
+                    <span className="text-2xl font-bold tracking-widest text-white group-hover:text-primary transition-colors duration-300 font-[family-name:var(--font-cinzel)] uppercase">
+                        Ashif
+                    </span>
                 </Link>
 
                 {/* Desktop Nav */}
